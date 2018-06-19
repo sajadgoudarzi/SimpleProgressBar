@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A616857720D9394000159E5E /* SGCircleProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A616857620D9394000159E5E /* SGCircleProgressBar.m */; };
 		A6D82D0220D1515E00D8D868 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D82D0120D1515E00D8D868 /* main.m */; };
 		A6D82D0520D1515E00D8D868 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D82D0420D1515E00D8D868 /* AppDelegate.m */; };
 		A6D82D0820D1515E00D8D868 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D82D0720D1515E00D8D868 /* ViewController.m */; };
 		A6D82D0B20D1515E00D8D868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D82D0920D1515E00D8D868 /* Main.storyboard */; };
 		A6D82D0D20D1515E00D8D868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D82D0C20D1515E00D8D868 /* Assets.xcassets */; };
 		A6D82D1020D1515E00D8D868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D82D0E20D1515E00D8D868 /* LaunchScreen.storyboard */; };
+		A6D82D1820D1725400D8D868 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D82D1720D1725400D8D868 /* QuartzCore.framework */; };
+		A6D82D1A20D1725C00D8D868 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D82D1920D1725C00D8D868 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A616857520D9394000159E5E /* SGCircleProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCircleProgressBar.h; sourceTree = "<group>"; };
+		A616857620D9394000159E5E /* SGCircleProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCircleProgressBar.m; sourceTree = "<group>"; };
 		A6D82CFD20D1515E00D8D868 /* SimpleProgressBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleProgressBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D82D0120D1515E00D8D868 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6D82D0320D1515E00D8D868 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +31,8 @@
 		A6D82D0C20D1515E00D8D868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6D82D0F20D1515E00D8D868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6D82D1120D1515E00D8D868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6D82D1720D1725400D8D868 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A6D82D1920D1725C00D8D868 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,15 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D82D1A20D1725C00D8D868 /* CoreGraphics.framework in Frameworks */,
+				A6D82D1820D1725400D8D868 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A616857420D938D000159E5E /* SGSimpleProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				A616857520D9394000159E5E /* SGCircleProgressBar.h */,
+				A616857620D9394000159E5E /* SGCircleProgressBar.m */,
+			);
+			name = SGSimpleProgressBar;
+			sourceTree = "<group>";
+		};
 		A6D82CF420D1515E00D8D868 = {
 			isa = PBXGroup;
 			children = (
+				A6D82D1920D1725C00D8D868 /* CoreGraphics.framework */,
+				A6D82D1720D1725400D8D868 /* QuartzCore.framework */,
 				A6D82CFF20D1515E00D8D868 /* SimpleProgressBar */,
 				A6D82CFE20D1515E00D8D868 /* Products */,
 			);
@@ -58,6 +78,7 @@
 		A6D82CFF20D1515E00D8D868 /* SimpleProgressBar */ = {
 			isa = PBXGroup;
 			children = (
+				A616857420D938D000159E5E /* SGSimpleProgressBar */,
 				A6D82D0320D1515E00D8D868 /* AppDelegate.h */,
 				A6D82D0420D1515E00D8D868 /* AppDelegate.m */,
 				A6D82D0620D1515E00D8D868 /* ViewController.h */,
@@ -151,6 +172,7 @@
 			files = (
 				A6D82D0820D1515E00D8D868 /* ViewController.m in Sources */,
 				A6D82D0520D1515E00D8D868 /* AppDelegate.m in Sources */,
+				A616857720D9394000159E5E /* SGCircleProgressBar.m in Sources */,
 				A6D82D0220D1515E00D8D868 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +320,7 @@
 				A6D82D1620D1515E00D8D868 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
